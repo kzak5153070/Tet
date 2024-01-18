@@ -198,7 +198,7 @@ function gameOverAnimation() {
 function drawSad() {
     const TOP_OFFSET = 5;
     for (let row = 0; row < SAD.length; row++) {
-        for (let column = 0; column < SAD[0].lengt; column++) {
+        for (let column = 0; column < SAD[0].length; column++) {
             if (!SAD[row][column]) continue;
             const cellIndex = convertPositionToIndex(TOP_OFFSET + row, column);
             cells[cellIndex].classList.add('sad');
